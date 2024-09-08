@@ -36,5 +36,11 @@ function sumarconFloat(int $numero1=0, float $numero2){
 }
 sumarconFloat(10,3.1416);
 echo '</br>';
-
+//Named Parameters en PHP
+function namedParameters(int $numero1, int $numero2){
+    echo $numero1;
+    echo '</br>Simple Function with named Parameters '. $numero1+$numero2;
+}
+namedParameters(numero1: 10, numero2: 20);//el papametro nombrado se puede pasar como la variable pero sin signo de $ 
+echo '</br>';
 ?>
